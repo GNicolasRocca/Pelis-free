@@ -29,11 +29,12 @@ a{
     align-self: end;
 }
 .d-flex{
+    display: flex;
+    justify-content: center;
     height: 2em;
-    width: 22em;
+    width: 21em;
     margin-right: 0.5em;
 }
-
 .navegation_items{
     background-color: #E2DDB4;
     margin-right: 2em;
@@ -41,6 +42,53 @@ a{
     padding: 1em;
 }
 
+#cards_box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.div_movies{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+.div_movies .elements_hover{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: none;
+}
+.div_movies:hover .elements_hover{
+    display: block;
+    opacity: 1;
+    background-color: red;
+}
+
+.elements_movies{
+    display: flex;
+    justify-content: center;
+}
+#poster_movies{
+    display: flex;
+    justify-content: center;
+    height: 35em;
+    width: 25em;
+}
+
+
+#paragraph_search_sec{
+    display: flex;
+    justify-content: center;
+}
+#nav_search_box{
+    display: flex;
+    justify-content: center;
+}
+#nav_search{
+    display: flex;
+    justify-content: center;
+}
 #form_creation_movies{
     display: flex;
     flex-direction: column;

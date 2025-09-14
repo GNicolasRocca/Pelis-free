@@ -10,18 +10,18 @@
     <title>Pelisfree</title>
   </head>
     
-<body>
+  <body>
     <section id="navegation_site">
       <a href="../index.html">
         <h2 id="page_title">Pelisfree</h2>
       </a>
       <nav id="navegation_bar">
         <a href="recommend_webs.html" class="navegation_items">Webs recomendadas</a>
-        <a href="about_us.html" class="navegation_items">Sobre nosotros</a>
+        <a href="search_movie.html" class="navegation_items">Buscar película</a>
         <a href="movies_creation.html" class="navegation_items">Creación de películas</a>
       </nav>
     </section>
-
+    <!--Hacer con bootstrap los inputs-->
     <form id="form_creation_movies">
         <input type="text" placeholder="Titulo" id="form_title"class="inputs_creation_movies"/>
         <input type="text" placeholder="Año" id="form_year" class="inputs_creation_movies"/>
@@ -31,14 +31,14 @@
 
         <input placeholder="Puntuación"/>
         <input placeholder="Poster"/>
-        <button>Crear</button>
-        <button>Limpiar</button>
+        <button id="create_movie_card">Crear</button>
+        <button id="clean_hud">Limpiar</button>
 
     </form>
 
 
 
-    <script src="./scripts/index.js"></script>
+    <script src="../scripts/form.js"></script>
 </body>
 
 

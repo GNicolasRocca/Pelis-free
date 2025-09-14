@@ -8,3 +8,4 @@ app.listen(PORT, () => {
     console.log("Conectado en el puerto:", PORT);
 });
 
+// Acordarse de que para poder ver las solicitudes tengo que darle npm start al back y solicitar la solicitud
