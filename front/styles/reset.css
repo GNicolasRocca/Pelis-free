@@ -1,0 +1,58 @@
+/* Reset CSS Moderno */
+/* Basado en Meyer Reset y Normalize, adaptado a buenas prácticas actuales */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Manejo consistente del box model */
+}
+
+html {
+  font-size: 100%; /* 1rem = 16px por defecto */
+  -webkit-text-size-adjust: 100%; /* Evita zoom raro en móviles */
+}
+
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Hereda tipografía del body */
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
