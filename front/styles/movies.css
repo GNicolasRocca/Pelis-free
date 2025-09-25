@@ -1,0 +1,26 @@
+#form_creation_movies{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.inputs_creation_movies{
+    margin: 0.3em;
+    border-radius: 8px;
+}
+
+#create_movie_card{
+    width: 12em;
+    height: 3em;
+    background-color: #FFF000;
+    color:#141414;
+    border: none;
+}
+
+#clean_hud{
+    width: 12em;
+    height: 3em;
+    background-color: red;
+    color:#141414;
+    border: none;
+}

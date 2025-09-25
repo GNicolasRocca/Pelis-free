@@ -1,0 +1,1 @@
+// hacer chequeos sobre si la informacion del post de movies es correcta

@@ -20,12 +20,15 @@ $.get("https://students-api.up.railway.app/movies", (data, status) => {
 });
 */
 
+// const URL = "https://students-api.up.railway.app/movies"; 
+
 const axios = require("axios");
 const { movie_card, cards_box } = require("./cards_movies");
+const URL = "http://localhost:3000/movies";
 
 const fetch_movies = async () => {
-    try {
-        const response = await axios.get("https://students-api.up.railway.app/movies");
+    try{
+        const response = await axios.get(URL);
         const movies = response.data;
 
         movies.map(movie => {

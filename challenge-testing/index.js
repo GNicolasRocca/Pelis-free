@@ -1,26 +1,30 @@
-class carrito_de_compras{
+class CarritoCompra{
     constructor(){
-        this.arr = [];
+        this.carro = [];
     }
     
     agregarProducto(producto){
-        this.arr.push(producto);
+        this.carro.push(producto);
     }
 
     calcularTotal(){
-        var total = 0;
+        let total = 0;
 
-        for(let i = 0; i < this.arr.length - 1; i++){
-            total += this.arr[i].price;
+        for(let i = 0; i < this.carro.length; i++){
+         total += this.carro[i].price;
         }
 
         return total;
     }
 
     aplicarDescuento(porcentaje){
-        const descuento_total = (total * porcentaje) / 100;
+        const total = this.calcularTotal();
+
+        return total * (1 - porcentaje / 100);
     }
 
 }
 
-module.exports = carrito_de_compras;
+module.exports = CarritoCompra;
+
+// npm test en la consola para poder iniciar el test

@@ -23,17 +23,18 @@ const movie_card = ({title, year, director, duration, genre, rate, poster}) => {
     duration_movie.classList.add("elements_movies", "elements_hover");
     genre_movie.classList.add("elements_movies", "elements_hover");
     rate_movie.classList.add("elements_movies", "elements_hover");
-    poster_movie.id = "poster_movies";
+    poster_movie.classList.add("poster_movies");
     
     const cards_container = document.createElement("div");
     cards_container.classList.add("div_movies");
 
-    cards_container.appendChild(title_movie);
+    
     cards_container.appendChild(year_movie);
     cards_container.appendChild(director_movie);
     cards_container.appendChild(duration_movie);
     cards_container.appendChild(genre_movie);
     cards_container.appendChild(rate_movie);
+    cards_container.appendChild(title_movie);
     cards_container.appendChild(poster_movie);
 
     return cards_container;

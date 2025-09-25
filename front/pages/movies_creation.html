@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/H-icon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/movies.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Pelisfree</title>
   </head>
     
   <body>
     <section id="navegation_site">
-      <a href="../index.html">
+      <a id="title_nav" href="../index.html">
         <h2 id="page_title">Pelisfree</h2>
       </a>
       <nav id="navegation_bar">
@@ -23,20 +26,16 @@
     </section>
     <!--Hacer con bootstrap los inputs-->
     <form id="form_creation_movies">
-        <input type="text" placeholder="Titulo" id="form_title"class="inputs_creation_movies"/>
-        <input type="text" placeholder="Año" id="form_year" class="inputs_creation_movies"/>
-        <input type="text" placeholder="Director" id="form_director" class="inputs_creation_movies"/>
-        <input type="text" placeholder="Duración" id="form_duration" class="inputs_creation_movies"/>
-        <input type="text" placeholder="Género" id="form_genre" class="inputs_creation_movies"/>
-
-        <input placeholder="Puntuación"/>
-        <input placeholder="Poster"/>
-        <button id="create_movie_card">Crear</button>
-        <button id="clean_hud">Limpiar</button>
-
+        <input type="text" placeholder="Titulo" id="form_title"class="inputs_creation_movies form-control me-2"/>
+        <input type="text" placeholder="Año" id="form_year" class="inputs_creation_movies form-control me-2"/>
+        <input type="text" placeholder="Director" id="form_director" class="inputs_creation_movies form-control me-2"/>
+        <input type="text" placeholder="Duración" id="form_duration" class="inputs_creation_movies form-control me-2"/>
+        <input type="text" placeholder="Género" id="form_genre" class="inputs_creation_movies form-control me-2"/>
+        <input placeholder="Puntuación" id="form_rate" class="inputs_creation_movies form-control me-2"/>
+        <input placeholder="Poster" id="form_poster" class="inputs_creation_movies form-control me-2"/>
     </form>
-
-
+        <button id="create_movie_card" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Crear</button>
+        <button id="clean_hud"  class="btn btn-primary active">Limpiar</button>
 
     <script src="../scripts/form.js"></script>
 </body>
