@@ -50,7 +50,7 @@ class Movie_class{
 const get_movies = async () => {
     try{
         const movies_db = await Movie.find();
-
+        
         const movies = movies_db.map(movieData => new Movie_class(movieData));
 
         return movies;
