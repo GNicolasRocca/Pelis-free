@@ -1,0 +1,32 @@
+#navegation_site{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+}
+
+#title_nav{
+    width: 15em;
+    margin-right: 24em;
+    margin-bottom: 1em;
+}
+
+.navegation_items{
+    font-size: 1.2em;
+    background-color: #FFF000;
+    color: #141414;
+    margin-right: 2em;
+    margin-bottom: 5em;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+#navegation_bar{
+    display: flex;
+    align-items: center;
+}
+
+#navegation_bar_search_bar{
+    display: flex;
+    justify-content: end;
+    align-self: end;
+}

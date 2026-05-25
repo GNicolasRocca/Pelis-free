@@ -8,6 +8,7 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/reccomend_webs.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Pelisfree</title>
@@ -26,21 +27,37 @@
     </section>
    
     <section>
-      <h1 id="recommend_webs">Paginas recomendadas:</h1>
+      <div class="section-header">
+        <span class="section-label">Explora más contenido</span>
+        <h2 class="section-title">Páginas recomendadas</h2>
+      </div>
 
-      <h1>
-          Netflix<span class="badge bg-secondary reccomend_items">
-            <a href="https://www.netflix.com/ar/redeem">Aquí</a></span>
-      </h1>
-      <h1>
-          Amazon Prime Video<span class="badge bg-secondary reccomend_items">
-            <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root">Aquí</a></span>
-      </h1>
-      <h1>
-          Disney+<span class="badge bg-secondary reccomend_items">
-            <a href="https://www.disneyplus.com/es-cl?gclsrc=aw.ds&cid=DSS-Search-Google-22874890226-&s_kwcid=AL!8468!3!771231045073!b!!g!!180869000302-22720486&gad_source=1&gad_campaignid=22874890226&gbraid=0AAAAACzWEUGZul6YgglzI7QqVw7TuEBFD&gclid=Cj0KCQjwrc7GBhCfARIsAHGcW5XsKrxHfJTQJj60XO-0Gfl5vANiHexnP2mV0Hp8qTWS5qice20MK0waApUqEALw_wcB">
-              Aquí</a></span>
-      </h1>
+      <div id="logos_div">
+        <div class="icons_text">
+          <img src="../assets/netflix.png" class="icons_images" />
+          <h1 class="text_page_website">
+            Netflix<span class="badge bg-secondary reccomend_items">
+              <a href="https://www.netflix.com/ar/redeem" class="button">Aquí</a></span>
+          </h1>
+        </div>
+    
+        <div class="icons_text">
+          <img src="../assets/amazon.png" class="icons_images" />
+          <h1 class="text_page_website">
+            Amazon Prime Video<span class="badge bg-secondary reccomend_items">
+              <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root" class="button">Aquí</a></span>
+          </h1>
+        </div>
+
+        <div class="icons_text">
+          <img src="../assets/disney.png" class="icons_images" />
+          <h1 class="text_page_website">
+            Disney+<span class="badge bg-secondary reccomend_items">
+              <a href="https://www.disneyplus.com/es-cl?gclsrc=aw.ds&cid=DSS-Search-Google-22874890226-&s_kwcid=AL!8468!3!771231045073!b!!g!!180869000302-22720486&gad_source=1&gad_campaignid=22874890226&gbraid=0AAAAACzWEUGZul6YgglzI7QqVw7TuEBFD&gclid=Cj0KCQjwrc7GBhCfARIsAHGcW5XsKrxHfJTQJj60XO-0Gfl5vANiHexnP2mV0Hp8qTWS5qice20MK0waApUqEALw_wcB" class="button">
+                Aquí</a></span>
+          </h1>
+        </div>
+      </div>
     </section>
 
     <script src="../public/bundle.js"></script>

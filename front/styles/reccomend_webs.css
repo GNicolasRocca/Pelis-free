@@ -1,6 +1,81 @@
-#recommend_webs{
-    margin-top: 1em;
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
 }
-.reccomend_items{
-    margin: 1em 0em 0em 1em;
+
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFD700; /* tu amarillo */
+  opacity: 0.85;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  position: relative;
+}
+
+/* Línea decorativa debajo del título */
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #FFD700;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+#logos_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 3em;
+}
+
+.text_page_website {
+    margin: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.reccomend_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0em 0em 1em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+.reccomend_items:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+h1 .badge.bg-secondary {
+  background-color: #FFD700 !important;
+  color: #000000;
+}
+
+.button{
+    color:#ffffff;
+    border-radius: 4px;
+    
 }
