@@ -1,3 +1,15 @@
+.error_message {
+    color: red;
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+    display: block;
+    min-height: 16px; /* para que no salte el layout */
+}
+
+.is-invalid {
+    border-color: red !important;
+}
+
 #form_creation_movies {
     display: flex;
     flex-direction: column;

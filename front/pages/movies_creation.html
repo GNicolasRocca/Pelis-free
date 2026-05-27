@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
-    <link rel="stylesheet" href="../styles/form.css" />
+    <link rel="stylesheet" href="../styles/movies_creation.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Pelisfree</title>
   </head>
@@ -28,19 +28,32 @@
     <!--Hacer con bootstrap los inputs-->
     <form id="form_creation_movies">
         <input type="text" placeholder="Título" id="form_title"class="inputs_creation_movies form-control me-2"/>
+        <span class="error_message" id="error_title"></span>
+
         <input type="text" placeholder="Año" id="form_year" class="inputs_creation_movies form-control me-2"/>
+        <span class="error_message" id="error_year"></span>
+
         <input type="text" placeholder="Director" id="form_director" class="inputs_creation_movies form-control me-2"/>
+        <span class="error_message" id="error_director"></span>
+
         <input type="text" placeholder="Duración" id="form_duration" class="inputs_creation_movies form-control me-2"/>
+        <span class="error_message" id="error_duration"></span>
+
         <input type="text" placeholder="Género" id="form_genre" class="inputs_creation_movies form-control me-2"/>
+        <span class="error_message" id="error_genre"></span>
+
         <input placeholder="Puntuación" id="form_rate" class="inputs_creation_movies form-control me-2"/>
-        <input placeholder="Poster" id="form_poster" class="inputs_creation_movies form-control me-2"/>
+        <span class="error_message" id="error_rate"></span>
+
+        <input placeholder="Link del poster" id="form_poster" class="inputs_creation_movies form-control me-2"/>
+        <span class="error_message" id="error_poster"></span>
     </form>
     <div id="create_buttons">
         <button id="create_movie_button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Crear</button>
         <button id="clean_form"  class="btn btn-primary active">Limpiar</button>
     </div>
 
-    <script src="../scripts/form.js"></script>
+    <script src="../public/form.js"></script>
 </body>
 
 
