@@ -16,6 +16,7 @@
 }
 
 .section-title {
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
   color: #ffffff;
@@ -78,4 +79,18 @@ h1 .badge.bg-secondary {
     color:#ffffff;
     border-radius: 4px;
     
+}
+
+@media (max-width: 768px) {
+  #section_reccomended {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+  #logos_div {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
