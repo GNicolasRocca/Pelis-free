@@ -1,0 +1,22 @@
+.search_bar {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.search_bar .container-fluid {
+    width: auto;
+}
+
+.d-flex {
+    height: 3em;
+    width: 33em;
+}
+
+.btn-outline-success {
+    align-self: center;
+    height: 3em;
+    --bs-btn-color: #FFF000;
+    --bs-btn-border-color: #FFF000;
+    --bs-btn-hover-bg: #FFF000;
+}
