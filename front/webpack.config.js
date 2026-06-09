@@ -1,7 +1,8 @@
 module.exports = {
     entry: {
         bundle: "./scripts/index.js",
-        form: "./scripts/form.js"
+        form: "./scripts/form.js",
+        search: "./scripts/search_bar.js"
     },
     output: {
         path: __dirname + "/public",

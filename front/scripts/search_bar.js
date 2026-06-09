@@ -1,15 +1,36 @@
+const axios = require("axios");
+const { movie_card, cards_box } = require("./cards_movies");
+
+const URL = "http://localhost:3000/movies";
+
 const search_input = document.getElementById("search_input");
-const movies = document.querySelectorAll(".elements_movies");
 
-search_input.addEventListener("input", () => {
-  const query = search_input.value.toLowerCase();
+const render_movies = (movies) => {
+    cards_box.innerHTML = "";
+    movies.forEach(movie => {
+        const card = movie_card(movie);
+        cards_box.appendChild(card);
+    });
+};
 
-  movies.forEach(movie => {
-    const title = movie.textContent.toLowerCase();
-    if(title.includes(query)) {
-      movie.classList.remove("hidden");
-    } else{
-      movie.classList.add("hidden");
+// Busca cuando escribe más fluido
+search_input.addEventListener("input", async () => {
+    const title = search_input.value.trim();
+
+    if (!title) {
+        // Si borra todo, vuelve a mostrar todas
+        const response = await axios.get(URL);
+        render_movies(response.data);
+        return;
     }
-  });
+
+    try {
+        const response = await axios.get(`${URL}/search?title=${title}`);
+
+        render_movies(response.data);
+    } catch(err) {
+        if (err.response?.status === 404) {
+            cards_box.innerHTML = "<p style='color:white'>No se encontraron películas</p>";
+        }
+    }
 });
