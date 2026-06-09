@@ -1,5 +1,5 @@
 const PORT = 3000;
-const app = require("./src/server");
+const app = require("./server.js");
 const router = require("./src/routes/routes_movies")
 const dbConfig = require("./src/config/dbConfig.js");
 
@@ -16,5 +16,3 @@ dbConfig()
 // aplicaciones de la vida real tambien es asi
 
 app.use(router);
-
-// RECORDAR: De que para poder ver las solicitudes tengo que darle npm start al back y solicitar la solicitud

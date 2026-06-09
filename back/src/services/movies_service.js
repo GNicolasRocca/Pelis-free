@@ -16,37 +16,6 @@ class Movie_class{
   }
 }
 
-/*const movies_data = [
-    {
-        "title":"Guardians of the Galaxy Vol. 2",
-        "year":2017,
-        "director":"James Gunn",
-        "duration":"2h 16min",
-        "genre":["Action","Adventure","Comedy"],
-        "rate":7.7,
-        "poster":"https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg"
-    },
-    {
-        "title":"Star Wars: Episode IV - A New Hope",
-        "year":1977,
-        "director":"George Lucas",
-        "duration":"2h 1min",
-        "genre":["Action","Adventure","Fantasy","Sci-Fi"],
-        "rate":8.7,
-        "poster":"https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg"
-    },
-    {
-        "title":"The Lord of the Rings: The Fellowship of the Ring",
-        "year":2001,
-        "director":"Peter Jackson",
-        "duration":"2h 58min",
-        "genre": ["Action","Adventure","Drama","Fantasy"],
-        "rate":8.8,
-        "poster":"https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"
-    }
-]
-*/
-
 const get_movies = async () => {
     try{
         const movies_db = await Movie.find();
@@ -71,5 +40,21 @@ const post_movies = async ({title, poster, director, year, duration, genre, rate
     }
 }
 
+// Esto en caso de extenderse mucho iría en otro archivo
+const find_movie = async ({ title }) => { // Poner que puede que no llegue
+    try {
+        const title_clean = title.trim().replace(/\s+/g, "\\s*");
+        const regex = new RegExp(title_clean, "i"); // "i" = case insensitive
 
-module.exports = { get_movies, post_movies };
+        const search_movie = await Movie.find({ title: { $regex: regex } }); // find en vez de findOne para traer varios resultados
+        
+        return search_movie;
+        
+    } catch (error) {
+        console.log("Error al intentar buscar la peli en la DB", error.message);
+        throw { error: "Error al intentar buscar la peli en la DB" };
+    }
+}
+
+
+module.exports = { get_movies, post_movies, find_movie };
