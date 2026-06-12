@@ -21,6 +21,11 @@
     --bs-btn-hover-bg: #FFF000;
 }
 
+.form-control {
+    height: 100%;
+    width: 100%;
+}
+
 @media (max-width: 768px) {
     #search_input {
         width: 20em;
