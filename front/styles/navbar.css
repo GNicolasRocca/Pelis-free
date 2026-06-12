@@ -1,28 +1,38 @@
 #navegation_site {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    background-color: #212121;
     margin-bottom: 2em;
 }
 
 #title_nav {
+    align-self: center;
     width: 15em;
     margin-right: 24em;
-    margin-bottom: 1em;
 }
 
 .navegation_items {
-    font-size: 1.2em;
+    align-items: center;
     background-color: #FFF000;
     color: #141414;
-    margin-right: 2em;
-    margin-bottom: 5em;
+    font-size: 1.2em;
+    margin-right: 4em;
+    margin-bottom: 2em;
+    margin-top: 2em;
     padding: 1em;
     border-radius: 4px;
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6); 
+}
+
+.navegation_items:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
 #navegation_bar {
     display: flex;
-    align-items: center;
 }
 
 #navegation_bar_search_bar {

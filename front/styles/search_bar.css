@@ -1,10 +1,10 @@
-.search_bar {
+#search_bar {
     display: flex;
     justify-content: center;
     
 }
 
-.search_bar .container-fluid {
+#search_bar .container-fluid {
     width: auto;
 }
 
@@ -19,4 +19,14 @@
     --bs-btn-color: #FFF000;
     --bs-btn-border-color: #FFF000;
     --bs-btn-hover-bg: #FFF000;
+}
+
+@media (max-width: 768px) {
+    #search_input {
+        width: 20em;
+    }
+    #search_bar {
+        display: flex;
+        justify-content: center;
+    }
 }

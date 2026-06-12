@@ -3,29 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/H-icon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/front/assets/H-icon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/reset.css" />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/navbar.css" />
-    <link rel="stylesheet" href="../styles/movies_creation.css" />
+    <link rel="stylesheet" href="/front/styles/reset.css" />
+    <link rel="stylesheet" href="/front/styles/styles.css" />
+    <link rel="stylesheet" href="/front/styles/navbar.css" />
+    <link rel="stylesheet" href="/front/styles/movies_creation.css" />
+    <link rel="stylesheet" href="/front/styles/movies_manage_navbar.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Pelisfree</title>
   </head>
     
   <body>
     <section id="navegation_site">
-      <a id="title_nav" href="./index.html">
+      <a id="title_nav" href="../index.html">
         <h2 id="page_title">Pelisfree</h2>
       </a>
       <nav id="navegation_bar">
-        <a href="recommend_webs.html" class="navegation_items">Webs recomendadas</a>
-        <a href="history_cinema.html" class="navegation_items">Historia del cine</a>
-        <a href="movies_creation.html" class="navegation_items">Creación de películas</a>
+        <a href="../recommend_webs.html" class="navegation_items">Webs recomendadas</a>
+        <a href="../history_cinema.html" class="navegation_items">Historia del cine</a>
+        <a href="movies_creation.html" class="navegation_items">Administrar películas</a>
       </nav>
     </section>
-    <!--Hacer con bootstrap los inputs-->
+    
+    <section id="nav_site_mov_manage">
+      <nav id="nav_bar_mov_manage">
+        <a href="mov_creation.html" class="nav_items_mov_manage">Agregar película</a>
+        <a href="" class="nav_items_mov_manage">Borrar película</a>
+        <a href="" class="nav_items_mov_manage">Editar película</a>
+      </nav>
+    </section>
+
+    </section>
     <form id="form_creation_movies">
         <input type="text" placeholder="Título" id="form_title"class="inputs_creation_movies form-control me-2"/>
         <span class="error_message" id="error_title"></span>
@@ -53,9 +63,7 @@
         <button id="clean_form"  class="btn btn-primary active">Limpiar</button>
     </div>
 
-    <script src="../public/form.js"></script>
-</body>
-
-
+    <script src="/front/public/form.js"></script>
+  </body>
 
 </html>
