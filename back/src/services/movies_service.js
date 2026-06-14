@@ -45,12 +45,7 @@ const find_movie = async ({ title }) => { // Poner que puede que no llegue, en c
     try {
         const title_clean = title.trim().replace(/\s+/g, "\\s*");
         const regex = new RegExp(title_clean, "i"); // "i" = case insensitive
-
         const search_movie = await Movie.find({ title: { $regex: regex } }); // find en vez de findOne para traer varios resultados
-        
-        if (search_movie.length === 0) {
-            return (res.status(404).json({ message: "No se encontraron películas" }));
-        }
 
         return search_movie;
         
