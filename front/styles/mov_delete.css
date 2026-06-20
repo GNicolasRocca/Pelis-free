@@ -1,0 +1,8 @@
+#delete_button {
+    width: 12em;
+    height: 3em;
+    margin: 0.3em;
+    background-color: red;
+    color:#141414;
+    border: none;
+}

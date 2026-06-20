@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/front/assets/H-icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/front/styles/reset.css" />
+    <link rel="stylesheet" href="/front/styles/styles.css" />
+    <link rel="stylesheet" href="/front/styles/navbar.css" />
+    <link rel="stylesheet" href="/front/styles/movies_creation.css" />
+    <link rel="stylesheet" href="/front/styles/movies_manage_navbar.css" />
+    <link rel="stylesheet" href="/front/styles/search_bar.css" />
+    <link rel="stylesheet" href="/front/styles/mov_delete.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Pelisfree</title>
+  </head>
+    
+  <body>
+    <section id="navegation_site">
+      <a id="title_nav" href="/front/pages/index.html">
+        <h2 id="page_title">Pelisfree</h2>
+      </a>
+      <nav id="navegation_bar">
+        <a href="/front/pages/recommend_webs.html" class="navegation_items">Webs recomendadas</a>
+        <a href="/front/pages/history_cinema.html" class="navegation_items">Historia del cine</a>
+        <a href="/front/pages/manage_movies/movies_creation.html" class="navegation_items">Administrar películas</a>
+      </nav>
+    </section>
+    
+    <section id="nav_site_mov_manage">
+      <nav id="nav_bar_mov_manage">
+        <a href="../mov_creation.html" class="nav_items_mov_manage">Agregar película</a>
+        <a href="../mov_delete.html" class="nav_items_mov_manage">Borrar película</a>
+        <a href="mov_edit.html" class="nav_items_mov_manage">Editar película</a>
+      </nav>
+    </section>
+
+    <section>
+      <nav id="search_bar">
+        <div class="container-fluid">
+         <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Búsqueda por nombre" aria-label="Search" id="search_input" />
+          <button id="edit_button" class="btn btn-primary active" type="reset">Editar</button>
+         </form>
+        </div>
+      </nav>
+    </section>
+
+    <section id="cards_box">
+    </section>
+    
+    <script src="/front/public/search.js"></script>
+    <script src="/front/public/bundle.js"></script>
+    <script src="/front/public/edit.js"></script>
+  </body>
+</html>

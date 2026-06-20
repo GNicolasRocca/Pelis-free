@@ -1,6 +1,6 @@
 const cards_box = document.getElementById("cards_box");
 
-const movie_card = ({title, year, director, duration, genre, rate, poster}) => {
+const movie_card = ({_id, title, year, director, duration, genre, rate, poster}) => {
     const title_movie = document.createElement("h2");
     const year_movie = document.createElement("p");
     const director_movie = document.createElement("p");
@@ -24,6 +24,22 @@ const movie_card = ({title, year, director, duration, genre, rate, poster}) => {
     genre_movie.classList.add("elements_movies", "elements_hover");
     rate_movie.classList.add("elements_movies", "elements_hover");
     poster_movie.classList.add("poster_movies");
+
+    // Event listener en la imagen para editar
+    poster_movie.style.cursor = "pointer";
+    poster_movie.addEventListener("click", () => {
+        localStorage.setItem("movie_to_edit", JSON.stringify({
+            id: _id,
+            title,
+            year,
+            director,
+            duration,
+            genre,
+            rate,
+            poster
+        }));
+        window.location.href = "/front/pages/manage_movies/mov_edit.html"; // ajustá la ruta
+    });
     
     const cards_container = document.createElement("div");
     cards_container.classList.add("div_movies");

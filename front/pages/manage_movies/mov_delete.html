@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/front/styles/navbar.css" />
     <link rel="stylesheet" href="/front/styles/movies_creation.css" />
     <link rel="stylesheet" href="/front/styles/movies_manage_navbar.css" />
+    <link rel="stylesheet" href="/front/styles/search_bar.css" />
+    <link rel="stylesheet" href="/front/styles/mov_delete.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Pelisfree</title>
   </head>
@@ -31,11 +33,26 @@
       <nav id="nav_bar_mov_manage">
         <a href="mov_creation.html" class="nav_items_mov_manage">Agregar película</a>
         <a href="mov_delete.html" class="nav_items_mov_manage">Borrar película</a>
-        <a href="movies_creation.html" class="nav_items_mov_manage">Editar película</a>
+        <a href="./movie_edition/mov_edit.html" class="nav_items_mov_manage">Editar película</a>
       </nav>
     </section>
-    
-    <script src="../public/form.js"></script>
-</body>
 
+    <section>
+      <nav id="search_bar">
+        <div class="container-fluid">
+         <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Búsqueda por nombre" aria-label="Search" id="search_input" />
+          <button id="delete_button" class="btn btn-primary active" type="reset">Eliminar</button>
+         </form>
+        </div>
+      </nav>
+    </section>
+
+    <section id="cards_box">
+    </section>
+    
+    <script src="/front/public/search.js"></script>
+    <script src="/front/public/bundle.js"></script>
+    <script src="/front/public/delete.js"></script>
+  </body>
 </html>

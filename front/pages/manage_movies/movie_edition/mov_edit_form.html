@@ -11,32 +11,34 @@
     <link rel="stylesheet" href="/front/styles/navbar.css" />
     <link rel="stylesheet" href="/front/styles/movies_creation.css" />
     <link rel="stylesheet" href="/front/styles/movies_manage_navbar.css" />
+    <link rel="stylesheet" href="/front/styles/search_bar.css" />
+    <link rel="stylesheet" href="/front/styles/mov_delete.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Pelisfree</title>
   </head>
     
   <body>
     <section id="navegation_site">
-      <a id="title_nav" href="../index.html">
+      <a id="title_nav" href="/front/pages/index.html">
         <h2 id="page_title">Pelisfree</h2>
       </a>
       <nav id="navegation_bar">
-        <a href="../recommend_webs.html" class="navegation_items">Webs recomendadas</a>
-        <a href="../history_cinema.html" class="navegation_items">Historia del cine</a>
-        <a href="movies_creation.html" class="navegation_items">Administrar películas</a>
+        <a href="/front/pages/recommend_webs.html" class="navegation_items">Webs recomendadas</a>
+        <a href="/front/pages/history_cinema.html" class="navegation_items">Historia del cine</a>
+        <a href="/front/pages/manage_movies/movies_creation.html" class="navegation_items">Administrar películas</a>
       </nav>
     </section>
     
     <section id="nav_site_mov_manage">
       <nav id="nav_bar_mov_manage">
-        <a href="mov_creation.html" class="nav_items_mov_manage">Agregar película</a>
-        <a href="mov_delete.html" class="nav_items_mov_manage">Borrar película</a>
-        <a href="" class="nav_items_mov_manage">Editar película</a>
+        <a href="../mov_creation.html" class="nav_items_mov_manage">Agregar película</a>
+        <a href="../mov_delete.html" class="nav_items_mov_manage">Borrar película</a>
+        <a href="mov_edit.html" class="nav_items_mov_manage">Editar película</a>
       </nav>
     </section>
 
-    </section>
-    <form id="form_creation_movies">
+    <section>
+      <form id="form_creation_movies">
         <input type="text" placeholder="Título" id="form_title"class="inputs_creation_movies form-control me-2"/>
         <span class="error_message" id="error_title"></span>
 
@@ -57,13 +59,15 @@
 
         <input placeholder="Link del poster" id="form_poster" class="inputs_creation_movies form-control me-2"/>
         <span class="error_message" id="error_poster"></span>
-    </form>
-    <div id="create_buttons">
+      </form>
+      <div id="create_buttons">
         <button id="create_movie_button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true" type="button">Crear</button>
         <button id="clean_form"  class="btn btn-primary active" type="reset">Limpiar</button>
-    </div>
+      </div>
+    </section>
 
     <script src="/front/public/form.js"></script>
+    <script src="/front/public/bundle.js"></script>
+    <script src="/front/public/edit.js"></script>
   </body>
-
 </html>
