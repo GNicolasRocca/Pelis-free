@@ -1,13 +1,16 @@
 const express = require("express");
-const { movies_controllers, movies_destructuring, movies_searching, movies_delete, movies_edit } = require("../controllers/movie_controllers");
-
+const { get_all_movies } = require("../controllers/get_movies_controller");
+const { movie_post } = require("../controllers/post_movie_controller");
+const { movies_search } = require("../controllers/find_movie_controller");
+const { movie_delete } = require("../controllers/delete_movie_controller");
+const { movie_edit } = require("../controllers/edit_movie_controller");
 
 const router = express.Router();
 
-router.get("/movies", movies_controllers);
-router.post("/movies", movies_destructuring);
-router.get("/movies/search", movies_searching);
-router.delete("/movies", movies_delete);
-router.put("/movies", movies_edit);
+router.get("/movies", get_all_movies);
+router.post("/movies", movie_post);
+router.get("/movies/search", movies_search);
+router.delete("/movies", movie_delete);
+router.put("/movies", movie_edit);
 
 module.exports = router;
