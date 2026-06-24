@@ -26,21 +26,24 @@ const movie_card = ({_id, title, year, director, duration, genre, rate, poster})
     poster_movie.classList.add("poster_movies");
 
     // Event listener en la imagen para editar
-    poster_movie.style.cursor = "pointer";
     poster_movie.addEventListener("click", () => {
         localStorage.setItem("movie_to_edit", JSON.stringify({
-            id: _id,
-            title,
-            year,
-            director,
-            duration,
-            genre,
-            rate,
-            poster
+        id: _id,
+        title,
+        year,
+        director,
+        duration,
+        genre,
+        rate,
+        poster
         }));
-        window.location.href = "/front/pages/manage_movies/mov_edit.html"; // ajustá la ruta
+
+        // Solo redirige si estás en la página de edición
+        if (window.location.href.includes("mov_edit")) {
+        window.location.href = "./mov_edit_form.html";
+        }
     });
-    
+
     const cards_container = document.createElement("div");
     cards_container.classList.add("div_movies");
 

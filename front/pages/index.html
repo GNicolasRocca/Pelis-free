@@ -27,12 +27,11 @@
     </section>
 
     <section>
-      <!-- Aca quiero poner que se puede seleccionar el filtro de busqueda (nombre, director, puntuacion...) -->
-      <select class="form-select form-select-sm" aria-label="Small select example">
-        <option selected>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+      <select id="search_select" class="form-select form-select-sm" aria-label="Small select example">
+        <option selected value="">Buscar por:</option>
+        <option value="title">Nombre de la película</option>
+        <option value="director">Nombre del director</option>
+        <option value="genre">Género de la película</option>
       </select>
       <nav id="search_bar">
         <div class="container-fluid">
@@ -46,6 +45,7 @@
     <section id="cards_box">
     </section>
 
+    <script src="../public/option_bar.js"></script>
     <script src="../public/search.js"></script>
     <script src="../public/bundle.js"></script>
   </body>

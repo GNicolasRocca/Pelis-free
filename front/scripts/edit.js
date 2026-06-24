@@ -3,6 +3,8 @@ const BASE_URL = "http://localhost:3000/movies";
 
 // Pre-llena el formulario con los datos de la película
 const movie_to_edit = JSON.parse(localStorage.getItem("movie_to_edit"));
+console.log("Movie a editar:", movie_to_edit)
+
 
 if (movie_to_edit) {
     document.getElementById("form_title").value = movie_to_edit.title;
@@ -15,9 +17,9 @@ if (movie_to_edit) {
 }
 
 // Envía el PUT cuando el usuario confirma los cambios
-const edit_button = document.getElementById("edit_button");
+const button_edit = document.getElementById("edit_movie_button");
 
-edit_button.addEventListener("click", async (event) => {
+button_edit.addEventListener("click", async (event) => {
     event.preventDefault();
 
     const movie_data = {
@@ -31,10 +33,10 @@ edit_button.addEventListener("click", async (event) => {
     };
 
     try {
-        await axios.put(`${BASE_URL}?id=${movie_edition/movie_to_edit.id}`, movie_data);
+        await axios.put(`${BASE_URL}?id=${movie_to_edit.id}`, movie_data);
         alert("Película editada correctamente");
         localStorage.removeItem("movie_to_edit"); // limpia el localStorage
-        window.location.href = "/front/pages/manage_movies/movie_edition/mov_edit_form.html"; // redirige
+        window.location.href = "./mov_edit_form.html"; // redirige
     } catch(err) {
         console.log("Error:", err.response);
         alert("Error al editar la película");
