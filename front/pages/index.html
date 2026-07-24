@@ -26,17 +26,11 @@
       </nav>
     </section>
 
-    <section>
-      <select id="search_select" class="form-select form-select-sm" aria-label="Small select example">
-        <option selected value="">Buscar por:</option>
-        <option value="title">Nombre de la película</option>
-        <option value="director">Nombre del director</option>
-        <option value="genre">Género de la película</option>
-      </select>
+    <section id="search_section">
       <nav id="search_bar">
         <div class="container-fluid">
          <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Búsqueda por nombre" aria-label="Search" id="search_input" />
+          <input class="form-control me-2" type="search" placeholder="Búsqueda por título, nombre del director, género" aria-label="Search" id="search_input" />
          </form>
         </div>
       </nav>
@@ -45,8 +39,7 @@
     <section id="cards_box">
     </section>
 
-    <script src="../public/option_bar.js"></script>
-    <script src="../public/search.js"></script>
+    <script src="../public/search_bar.js"></script>
     <script src="../public/bundle.js"></script>
   </body>
 </html>

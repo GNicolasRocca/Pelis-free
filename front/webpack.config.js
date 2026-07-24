@@ -2,8 +2,7 @@ module.exports = {
     entry: {
         bundle: "./scripts/index.js",
         form: "./scripts/form.js",
-        search: "./scripts/search_bar.js",
-        option_bar: "./scripts/options_search_bar.js",
+        search_bar: "./scripts/search_bar.js",
         delete: "./scripts/delete_movie.js",
         edit: "./scripts/edit.js"
     },

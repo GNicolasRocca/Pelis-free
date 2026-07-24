@@ -1,3 +1,4 @@
+console.log("search_bar.js cargado")
 const axios = require("axios");
 const { movie_card, cards_box } = require("./cards_movies");
 
@@ -25,7 +26,8 @@ search_input.addEventListener("input", async () => {
     }
 
     try {
-        const response = await axios.get(`${URL}/search?title=${title}`);
+        const response = await axios.get(`${URL}/search?title=${title}&director=${title}&genre=${title}`);
+         console.log("URL:", response);
 
         render_movies(response.data);
     } catch(err) {
