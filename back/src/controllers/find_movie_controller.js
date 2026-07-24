@@ -2,11 +2,10 @@ const { find_movie } = require("../services/find_movie_service");
 
 const movies_search = async (req, res) => {
     try {
-        // Paso todos los datos porque puede que haga busqueda con ellos tambien
-        const { title, poster, director, year, duration, genre, rate } = req.query;
+        const { title, director, genre } = req.query;
 
-        if (!title) {
-            return res.status(400).json({ message: "Ingresá un título para buscar" });
+        if (!title && !director && !genre) {
+            return res.status(400).json({ message: "Ingresá un título, nombre del director o género para buscar" });
         }
 
         const found_movie = await find_movie(req.query);
