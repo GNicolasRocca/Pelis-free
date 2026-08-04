@@ -41,7 +41,16 @@
     width: 12em;
     height: 3em;
     margin: 0.3em;
-    background-color: red;
+    background-color: #c12626;
+    color:#141414;
+    border: none;
+}
+
+#edit_movie_button {
+    width: 12em;
+    height: 3em;
+    margin: 0.3em;
+    background-color: #FFF000;
     color:#141414;
     border: none;
 }
@@ -53,4 +62,28 @@
 
 .hidden {
   display: none;
+}
+
+#edit_legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2%;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFD700;
+  opacity: 0.85;
+}
+
+#edit_legend::after {
+  content: '';
+  display: block;  
+  width: 50px;
+  height: 3px;
+  background-color: #FFD700;
+  margin: 12px auto 0;
+  border-radius: 2px;
 }
