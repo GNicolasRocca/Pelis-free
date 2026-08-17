@@ -1,4 +1,3 @@
-<img width="1916" height="793" alt="Captura de pantalla 2026-08-16 235117" src="https://github.com/user-attachments/assets/8b207134-c0ca-4b02-a29a-f00c3e9b5d4d" />
 # Pelisfree
 
 Pelisfree es una biblioteca de películas en la que puedas almacenar tus películas favoritas con detalles tales como: título, año de lanzamiento, nombre del director, duración de la película, género, puntuación de la película e imagen del póster de la película. También incluye una breve sección de la historia del cine y también una sección de páginas recomendadas para ver películas.
