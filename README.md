@@ -13,13 +13,52 @@ Pelisfree es una biblioteca de películas en la que puedas almacenar tus pelícu
 
 ## 📁 Estructura del proyecto
 
-Respecto a la estructura del proyecto es monolitica y con diseño modular.  Con una separación de preocupaciones claras. El proyecto esta dividido en dos carpetas concisas, front y back.
+Respecto a la estructura del proyecto es monolítica y con diseño modular.  Con una separación de preocupaciones claras. El proyecto esta dividido en dos carpetas concisas, front y back.
 Por el lado del back esta dividido en middlewares y src. Dentro de src tenemos las carpetas de controllers, models, routes, service y la respectiva config.
-Por el lado del front tenemos los assets, pages, public, scrips y styles. Dentro de la carpeta assets tenemos las respectivas imagenes para el proyecto, dentro de la carpeta pages tenemos todos los archivos HTML del proyecto, scripts todos los modulos JS para el funcionamiento del lado del front y por ultimo la carpeta styles en la cual contiene todos los estilos CSS de la app.
+Por el lado del front tenemos los assets, pages, public, scrips y styles. Dentro de la carpeta assets tenemos las respectivas imágenes para el proyecto, dentro de la carpeta pages tenemos todos los archivos HTML del proyecto, scripts todos los módulos JS para el funcionamiento del lado del front y por ultimo la carpeta styles en la cual contiene todos los estilos CSS de la app.
 
 ## ⚙️ Instalación y uso local
 
-Pasos para correr el proyecto localmente.
+### Requisitos previos
+- Node.js v18+
+- npm
+- MongoDB Atlas (cuenta y cluster configurado)
+
+### Pasos
+
+1. Clonar el repositorio
+```bash
+git clone https://github.com/tu-usuario/pelis-free.git
+cd pelis-free
+```
+
+2. Instalar dependencias del backend
+```bash
+cd back
+npm install
+```
+
+3. Configurar variables de entorno
+En el .gitignore se encuentra excluido el .env. Por lo que el desarrollador debería crear un archivo `.env` en la carpeta `back` con el siguiente contenido: MONGODB_URI=mongodb+srv://usuario:contraseña@cluster.mongodb.net/Arrays_peliculas
+
+4. Iniciar el backend
+```bash
+npm start
+```
+
+5. Instalar dependencias del frontend
+```bash
+cd ../front
+npm install
+```
+
+6. Compilar los scripts
+```bash
+npx webpack
+```
+
+7. Abrir el frontend
+Abrí `front/pages/index.html` con Live Server o cualquier servidor estático.
 
 ## 🔌 Endpoints de la API
 
@@ -44,4 +83,8 @@ Pasos para correr el proyecto localmente.
 
 ## 🚀 Próximas funcionalidades
 
-Lo que planeás agregar a futuro.
+- [ ] Sistema de autenticación de usuarios (JWT + bcrypt)
+- [ ] Protección de datos sensibles
+- [ ] Deploy en Vercel (frontend) y Render (backend)
+- [ ] Expansión de la sección Historia del cine
+- [ ] Expansión de la sección Webs recomendadas
