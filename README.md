@@ -38,8 +38,10 @@ cd back
 npm install
 ```
 
-3. Configurar variables de entorno
-En el .gitignore se encuentra excluido el .env. Por lo que el desarrollador debería crear un archivo `.env` en la carpeta `back` con el siguiente contenido: MONGODB_URI=mongodb+srv://usuario:contraseña@cluster.mongodb.net/Arrays_peliculas
+3. Configurar variables de entorno: En el .gitignore se encuentra excluido el .env. Por lo que el desarrollador debería crear un archivo `.env` en la carpeta `back` con el siguiente contenido:
+```
+MONGODB_URI=mongodb+srv://usuario:contraseña@cluster.mongodb.net/Arrays_peliculas
+```
 
 5. Iniciar el backend
 ```bash
