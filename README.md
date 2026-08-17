@@ -1,3 +1,4 @@
+<img width="1916" height="793" alt="Captura de pantalla 2026-08-16 235117" src="https://github.com/user-attachments/assets/8b207134-c0ca-4b02-a29a-f00c3e9b5d4d" />
 # Pelisfree
 
 Pelisfree es una biblioteca de películas en la que puedas almacenar tus películas favoritas con detalles tales como: título, año de lanzamiento, nombre del director, duración de la película, género, puntuación de la película e imagen del póster de la película. También incluye una breve sección de la historia del cine y también una sección de páginas recomendadas para ver películas.
@@ -36,7 +37,7 @@ Pasos para correr el proyecto localmente.
 ## 📸 Capturas de pantalla
 
 <img width="1897" height="779" alt="imagen" src="https://github.com/user-attachments/assets/cd3a11ab-9c1b-41f8-b3b5-c9f167fe6320" />
-
+<img width="1916" height="793" alt="imagen" src="https://github.com/user-attachments/assets/fadca3f6-bfce-4ca4-938f-5fc1ca6394b4" />
 <img width="1913" height="804" alt="imagen" src="https://github.com/user-attachments/assets/87fb0988-ce5b-43eb-9030-b8d1cb77b3c8" />
 <img width="1913" height="760" alt="imagen" src="https://github.com/user-attachments/assets/8b12f65a-be22-4098-9562-f31c68c1550b" />
 <img width="1897" height="801" alt="imagen" src="https://github.com/user-attachments/assets/88ddb7fb-2b5a-4426-a64f-031052fa02e4" />
