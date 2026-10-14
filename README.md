@@ -9,6 +9,7 @@ Pelisfree es una biblioteca de películas en la que puedas almacenar tus pelícu
 * MongoDB - Versión 8.3
 * JavaScript (ES2025)
 * Express V5
+* Axios
 * NodeJS v26.7.0
 
 ## 📁 Estructura del proyecto
@@ -25,7 +26,6 @@ Por el lado del front tenemos los assets, pages, public, scrips y styles. Dentro
 - MongoDB Atlas (cuenta y cluster configurado)
 
 ### Pasos
-
 1. Clonar el repositorio
 ```bash
 git clone https://github.com/tu-usuario/pelis-free.git
